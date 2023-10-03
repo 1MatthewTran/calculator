@@ -68,7 +68,7 @@ operatorButtons.forEach(button => {
                 return;
             }
             rslt = operate(operator, num2, num1);
-            display.textContent = rslt;
+            display.textContent = rslt.toPrecision(12);
             num2 = rslt;
             num1 = '';
         }
@@ -84,7 +84,7 @@ equalsButton.addEventListener('click', function(e){
             reset();
             return;
         }
-        display.textContent = rslt;
+        display.textContent = rslt.toPrecision(12);
         num2 = rslt;
         num1 = '';
         operator = '';
