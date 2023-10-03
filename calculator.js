@@ -1,6 +1,15 @@
-let num1;
-let num2;
+const display = document.querySelector('.display');
+const numberButtons = document.querySelectorAll('.number');
+const operatorButtons = document.querySelectorAll('.operator');
+const equalsButton = document.querySelector('.equals');
+
+let num1 = '';
+let num2 = '';
+let a;
+let b;
 let operator;
+let isNum1 = true;
+
 function add(a,b){
     return a+b;
 }
@@ -30,3 +39,10 @@ function operate(operator, a, b){
             return "Invalid Operator";
     }
 }
+
+numberButtons.forEach(button => {
+    button.addEventListener('click', function(e){
+        display.textContent += button.textContent;
+    })
+});
+
