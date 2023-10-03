@@ -2,7 +2,7 @@ const display = document.querySelector('.display');
 const numberButtons = document.querySelectorAll('.number');
 const operatorButtons = document.querySelectorAll('.operator');
 const equalsButton = document.querySelector('.equals');
-const clearButton = document.querySelector('.clear');
+const clearButton = document.querySelector('.clear-everything');
 
 let num1 = '';
 let num2 = '';
